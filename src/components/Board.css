@@ -1,0 +1,73 @@
+.game-board {
+	display: grid;
+	margin: 0 auto;
+	background-color: #f0f0f0;
+	border: 2px solid #333;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	max-width: 100%;
+	max-height: calc(100vh - 200px);
+	overflow: hidden;
+}
+
+.cell {
+	width: 30px;
+	height: 30px;
+	box-sizing: border-box;
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #e0e0e0;
+	transition: background-color 0.1s ease;
+}
+
+.snake-cell {
+	background-color: #4caf50;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+	z-index: 1;
+}
+
+.snake-head {
+	background-color: #388e3c;
+	border-radius: 6px;
+}
+
+.food-cell {
+	background-color: #ff5252;
+	border-radius: 50%;
+	animation: pulse 1s infinite;
+	z-index: 1;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+	}
+}
+
+.particle {
+	position: absolute;
+	pointer-events: none;
+	animation: particle-animation 0.5s ease-out forwards;
+}
+
+@keyframes particle-animation {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0);
+		opacity: 0;
+	}
+}

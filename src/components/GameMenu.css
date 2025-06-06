@@ -1,0 +1,116 @@
+.game-menu {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 2rem;
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.game-menu h1 {
+	text-align: center;
+	color: #2c3e50;
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
+}
+
+.menu-content {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.difficulty-section,
+.controls-section,
+.high-score {
+	background: #f8f9fa;
+	padding: 1.5rem;
+	border-radius: 8px;
+}
+
+.difficulty-section h2,
+.controls-section h2,
+.high-score h2 {
+	color: #2c3e50;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+}
+
+.difficulty-buttons {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.difficulty-btn {
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 6px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform 0.2s, box-shadow 0.2s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.difficulty-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.difficulty-btn.easy {
+	background: #4caf50;
+	color: white;
+}
+
+.difficulty-btn.medium {
+	background: #ffc107;
+	color: #2c3e50;
+}
+
+.difficulty-btn.hard {
+	background: #f44336;
+	color: white;
+}
+
+.speed-info {
+	font-size: 0.8rem;
+	opacity: 0.9;
+}
+
+.controls-info {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 1rem;
+}
+
+.control-item {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.key {
+	background: #e9ecef;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	font-weight: bold;
+	min-width: 40px;
+	text-align: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.description {
+	color: #6c757d;
+}
+
+.high-score .score {
+	font-size: 3rem;
+	font-weight: bold;
+	color: #2c3e50;
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
