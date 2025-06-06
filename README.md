@@ -2,7 +2,8 @@
 
 A modern implementation of the classic Snake game built with React, TypeScript, and Vite. This project features a responsive design, multiple difficulty levels, and smooth animations.
 
-![Snake Game Screenshot](screenshot.png)
+<img width="808" alt="Screenshot 2025-06-06 at 11 53 58 AM" src="https://github.com/user-attachments/assets/f995f26f-d035-42ad-9e91-fe69505b01bd" />
+
 
 ## ✨ Features
 
